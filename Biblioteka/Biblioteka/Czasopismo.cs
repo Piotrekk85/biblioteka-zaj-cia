@@ -9,13 +9,12 @@ namespace Biblioteka
     class Czasopismo : Pozycja
     {
         private int numer;
+
+        //konstruktor parametryczny (lepiej użyc base)
         public Czasopismo (int numer,string tytuł,int id, string wydawnictwo,int rokWydania)
+            : base(tytuł, id, wydawnictwo, rokWydania)
         {
             this.numer = numer;
-            this.tytuł = tytuł;
-            this.id = id;
-            this.wydawnictwo = wydawnictwo;
-            this.rokWydania = rokWydania;
         }
         public Czasopismo()
         {
@@ -25,6 +24,16 @@ namespace Biblioteka
             wydawnictwo = "wydawnictwo";
             rokWydania = DateTime.Today.Year;
         }
-        public void WypiszInfo();
+        
+        //trzeba przesłonić metodę i dodać tu implementację
+        public override void WypiszInfo()
+        {
+            Console.WriteLine("Tytuł: {0}", tytuł);
+            Console.WriteLine("Numer: {0}", numer);
+            Console.WriteLine("Nr katalogowy: {0}", id);
+            Console.WriteLine("Wydawnictwo: {0}", wydawnictwo);
+            Console.WriteLine("Rok wydaniwa: {0}", rokWydania);
+        }
+        
     }
 }

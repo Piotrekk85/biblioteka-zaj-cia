@@ -9,17 +9,29 @@ namespace Biblioteka
     class Autor:Osoba
     {
         private string narodowosc;
+
+        //konstuktor parametryczny (można odwołać się z pomocą base do konstruktora z klasy wyżej, tak wg dokumentacji jest lepiej)
         public Autor(string imie,string nazwisko,string narodowosc)
+            :base(imie,nazwisko)
         {
-            this.imie = imie;
-            this.nazwisko = nazwisko;
             this.narodowosc = narodowosc;
         }
+
+        //konstruktor domyslny
+        public Autor() { }
+
+       
+
+        //konstruktor z 2 parametrami (bez narodowosci) - uwaga jw
         public Autor(string imie,string nazwisko)
+            :base(imie,nazwisko)
         {
-            imie = "Stefan";
-            nazwisko = "Żeromski";
             narodowosc = "Polska";
+        }
+
+        public string PobierzAutora()
+        {
+            return imie + " " + nazwisko;
         }
     }
 }

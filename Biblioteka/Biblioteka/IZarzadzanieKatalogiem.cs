@@ -8,8 +8,8 @@ namespace Biblioteka
 {
     interface IZarzadzanieKatalogiem
     {
-        string WyszukajPoTytule();
-        int WyszukajPoId();
+        void WyszukajPoTytule(string tytuł);
+        void WyszukajPoId(int id);
         void WypiszWszystko();
 
     }

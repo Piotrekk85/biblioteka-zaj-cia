@@ -12,6 +12,7 @@ namespace Biblioteka
         protected int id;
         protected string wydawnictwo;
         protected int rokWydania;
+
         public Pozycja(string tytuł, int id, string wydawnictwo, int rokWydania)
         {
             this.tytuł = tytuł;
@@ -19,6 +20,7 @@ namespace Biblioteka
             this.wydawnictwo = wydawnictwo;
             this.rokWydania = rokWydania;
         }
+
         public Pozycja()
         {
             tytuł = "Biografia";
@@ -26,9 +28,21 @@ namespace Biblioteka
             wydawnictwo = "Polgraf";
             rokWydania = DateTime.Today.Year;
         }
-        public abstract string WypiszInfo()
+
+                
+        //metoda wypisująca informacje, wg polecenia miała być abstrakcyjna, więc "wnętrza"/implementacji tu nie dodajemy
+        public abstract void WypiszInfo();
+
+        //metoda pomocnicza do wyszukania po tytule
+        public string PobierzTytuł()
         {
-            Console.WriteLine("{0},ID {1}, {2},Rok Wydania {3}",tytuł,id,wydawnictwo,rokWydania);
+            return tytuł;
+        }
+
+        //metoda pomocnicza do wyszukania po id
+        public int PobierzId()
+        {
+            return id;
         }
     }
 }

@@ -1,2 +1,8 @@
 C:\Users\local\Desktop\Biblioteka\Biblioteka\bin\Debug\Biblioteka.exe.config
 C:\Users\local\Desktop\Biblioteka\Biblioteka\obj\Debug\Biblioteka.csprojResolveAssemblyReference.cache
+C:\Users\Piotrek\Desktop\Cw7\5\biblioteka-zaj-cia-master\Biblioteka\Biblioteka\bin\Debug\Biblioteka.exe.config
+C:\Users\Piotrek\Desktop\Cw7\5\biblioteka-zaj-cia-master\Biblioteka\Biblioteka\obj\Debug\Biblioteka.csprojResolveAssemblyReference.cache
+C:\Users\Piotrek\Desktop\Cw7\5\biblioteka-zaj-cia-master\Biblioteka\Biblioteka\bin\Debug\Biblioteka.exe
+C:\Users\Piotrek\Desktop\Cw7\5\biblioteka-zaj-cia-master\Biblioteka\Biblioteka\bin\Debug\Biblioteka.pdb
+C:\Users\Piotrek\Desktop\Cw7\5\biblioteka-zaj-cia-master\Biblioteka\Biblioteka\obj\Debug\Biblioteka.exe
+C:\Users\Piotrek\Desktop\Cw7\5\biblioteka-zaj-cia-master\Biblioteka\Biblioteka\obj\Debug\Biblioteka.pdb
